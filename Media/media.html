@@ -13,8 +13,9 @@
 <body>
 
     <header>
-        <h1>Get To Know Me Through Media</h1>
-        <p>Welcome to a creative display of who I am using HTML media elements.</p>
+        <h1>Discover Me!</h1>
+        <p>Hi, I'm Rhoda, a passionate student of technology who loves to watch TV shows. Let me show you a
+            glimpse of who I am!</p>
         <nav>
             <a href="../index.html">Back to Main Profile</a>
         </nav>
@@ -24,9 +25,10 @@
     <section>
         <h2>My Favourite Photo</h2>
         <picture>
-            <source srcset="./media_files/Desktop.jpg" media="(min-width: 1024px)" width="1000">
+            <source srcset="./media_files/default.jpg" media="(min-width: 1024px)" width="1000">
             <source srcset="./media_files/tablet.jpg" media="(min-width: 768px)" width="700">
-            <img src="./media_files/mobile.jpeg" alt="A meaningful photo of myself" width="300">
+            <source media="(max-width: 600px)" srcset="./media_files/mobile.jpeg" width="300">
+            <img src="./media_files/default.jpg" alt="a picture of rhoda" width="300">
         </picture>
 
     </section>
@@ -34,7 +36,7 @@
     <!-- Audio Element -->
     <section>
         <h2>My Favourite Song Right Now</h2>
-        <p>Kendrick Lamar - luther</p>
+        <p>Listen to Kendrick Lamar - luther</p>
         <audio controls>
             <source src="./media_files/Kendrick Lamar - luther (Official Audio).mp4" type="audio/mpeg">
             Your browser does not support the audio element.
@@ -43,28 +45,22 @@
 
     <!-- Video Element -->
     <section>
-        <h2>My Favorite Ted Talks</h2>
+        <h2>A favourite clip from a Show i am watching</h2>
         <video controls width="600">
-            <source src="video/profile.mp4" type="video/mp4">
-            <source src="video/profile.webm" type="video/webm">
-            Your browser does not support the video element.
+            <source src="https://www.youtube.com/embed/28ZjrtD_iL0?si=e4kdjPiEuUUGBe02" type="video/mp4">
+
         </video>
     </section>
 
     <!-- Embedded Content -->
     <section>
-        <h2>My Favourite City</h2>
-        <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126922.47353185794!2d3.275046332319861!3d6.548007434697841!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b8b2e4bf9b2db%3A0xa77df041a0cfbe30!2sLagos%2C%20Nigeria!5e0!3m2!1sen!2sng!4v1234567890"
-            width="375" height="450" allowfullscreen="" loading="lazy">
+        <h2>My Favourite City: Tokoyo</h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/28ZjrtD_iL0?si=H-_j7acUTKigbBDz"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </iframe>
     </section>
-
-    <!-- Table of Media -->
-
-
-
-
 </body>
 
 </html>
